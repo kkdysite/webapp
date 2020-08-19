@@ -1145,7 +1145,7 @@ function u_checkendtime() {
             );
         }
     }else{
-        gotopage("#page-index");
+        gotopage("#page-login");
     }
 
 }
