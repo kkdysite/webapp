@@ -1,9 +1,9 @@
-#thisvod{border:1px solid rgba(200,200,200,0)}
-#thisvod:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
-#thisvod:focus .item-title {  color: #0169aa;}
-.fenji a:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
-.parseServerbuttons a:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
-#loginout:focus{border-color: rgb(129, 52, 1); background:#f60 ;color: rgb(252, 250, 255);}
+  #thisvod{border:1px solid rgba(200,200,200,0)}
+  #thisvod:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
+  #thisvod:focus .item-title {  color: #0169aa;}
+  .fenji a:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
+  .parseServerbuttons a:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
+  #loginout:focus{border-color: rgb(129, 52, 1); background:#f60 ;color: rgb(252, 250, 255);}
 .PlayAllButtons{height:calc(50vh - 2.6rem); overflow-y: auto;}
 .fenji  .button{float: left; margin: 0.2rem;}
 .from { clear: both; margin-top: 0.2REM;}

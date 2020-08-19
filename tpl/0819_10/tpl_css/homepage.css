@@ -11,4 +11,5 @@
 #shap_qrcode{display: none;}
 .shap_qrcode table, .shap_qrcode canvas{width: 100%; margin: 0 auto;}
 .nosafari,.issafari{display:none;}
-.alldownloadlink a{ margin: 0.2rem;white-space:nowrap;}
+.alldownloadlink a{ margin: 0.2rem;white-space:nowrap; display: block; float: left;}
+.alldownloadlink  .card{clear: both;}
