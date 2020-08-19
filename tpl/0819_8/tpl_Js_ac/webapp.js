@@ -1131,23 +1131,21 @@ function format(timestamp) {
 //新会员 自动升级 过期会员自动提示过期
 u_checkendtime(); //检查会员过期
 function u_checkendtime() {
-    if (getCookie("user_id") > 1) {
-        var u_info = JSON.parse(localStorage.getItem(localStor_name_u_info));
-        if(u_info){
-            if (u_info['user_end_time'] < (Date.parse(new Date())/ 1000) && u_info['user_end_time'] > 1) {
-                //会员过期提醒
-                $.confirm('是否去续费', '会员过期',
-                    function () {
-                         gotopage("#page_u_upgrade");
-                    },
-                    function () {
-                            $.toast("会员过期无法观影哦");
-                    }
-                );
-            }
+    var u_info = JSON.parse(localStorage.getItem(localStor_name_u_info));
+    if(u_info){
+        if (u_info['user_end_time'] < (Date.parse(new Date())/ 1000) && u_info['user_end_time'] > 1) {
+            //会员过期提醒
+            $.confirm('是否去续费', '会员过期',
+                function () {
+                     gotopage("#page_u_upgrade");
+                },
+                function () {
+                        $.toast("会员过期无法观影哦");
+                }
+            );
         }
-        
-
+    }else{
+        gotopage("#page-index");
     }
 
 }
