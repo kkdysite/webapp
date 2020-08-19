@@ -3,6 +3,10 @@ if(notetitle){
     $('.notetitle').html(notetitle);
     $('.notecontent').html(notecontent);
 }
+//版本信息
+if(app_var){
+    $('.app_var').html(app_var);
+}
 
 //存放删除和需要添加的播放界面代码 因为异步 需要全局变量
 var vodShowHtml_remove_add;

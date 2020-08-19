@@ -18,6 +18,20 @@ font-size:16px;font-style:normal;
 svg.icon { width: 0.8rem; height: 0.8rem;}
 header.bar svg.icon { width: 1rem; height: 1rem;}
 span{text-transform: none} /* 取消大写属性 */
+
+.h6title {
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+  }
+
+  .panel .col-33 a {
+    font-size: 0.6rem;
+  }
+
+  .panel .col-33 {
+    margin-top: 0.2rem;
+  }
+  
 /* 留言板 */
 .gbook_content{width: 100%; height: 5rem; border: 1px solid #EEE;}
 .theme-dark  .gbook_content{background:#555}
