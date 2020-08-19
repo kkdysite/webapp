@@ -1,0 +1,20 @@
+#thisvod{border:1px solid rgba(200,200,200,0)}
+#thisvod:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
+#thisvod:focus .item-title {  color: #0169aa;}
+.fenji a:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
+.parseServerbuttons a:focus{border:1px solid #044b77;background: #b3ddf7;color: #0169aa;}
+#loginout:focus{border-color: rgb(129, 52, 1); background:#f60 ;color: rgb(252, 250, 255);}
+.PlayAllButtons{height:calc(50vh - 2.6rem); overflow-y: auto;}
+.fenji  .button{float: left; margin: 0.2rem;}
+.from { clear: both; margin-top: 0.2REM;}
+.card{padding: 1rem;}
+#iframe_palyer{width: 100%; height:calc(50vh - 2.6rem);}
+.diviframeForJs_wait{text-align: center; background: #222; color: #EEE; width: 100%; height: 4rem; line-height: 4rem; font-size: 0.8rem;}
+
+.item-pic {padding-bottom:150%;background-size:auto 100%;background-position:50% 50% ;}
+#thisvod {display: block; padding: 0 0.2rem;}
+#thisvod .item-pic,#thisvod .item-title,#thisvod .item-shangci{text-align: center;}
+.item-title{font-size: 0.5rem;}
+.rightpanl{font-size: 0.5rem;}
+.parseServerbuttons {padding-right: 1rem;}
+.parseServerbuttons .button{margin: 0.25rem 0.25rem;font-size: 0.5rem; padding: 0.2rem;line-height: 0.6rem;height:0.9rem; float: left;}

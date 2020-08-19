@@ -22,7 +22,7 @@ if (sessionStorage.getItem("ios_install")){
 }
 
 
-if(window.location.host==Portable_url || Get_v=="tv"){ //域名相符 或者v=tv
+if(window.location.host==portable_url || Get_v=="tv"){ //域名相符 或者v=tv
     get_portable();
 }else if(!Get_v ){ 
     get_homepage();
@@ -31,7 +31,13 @@ if(window.location.host==Portable_url || Get_v=="tv"){ //域名相符 或者v=tv
 }
 /* 打开免安装版本 */
 function get_portable(){
-    alert("Portable_url"); //tv版本
+    $("title").html(app_name[WL]+" 免安装版");
+    $.getScript(tpl_Js_html[WL]+'portable_html.js?'+static_file_suffix, function(){
+        $("body").html(text);
+        $('body').append('<link rel="stylesheet" href="'+tpl_css[WL]+'portable.css'+static_file_suffix+'">'); 
+        $.getScript(tpl_Js_ac[WL]+'portable.js?'+static_file_suffix, function(){});
+
+    });
 }
 function get_ios_install(){
     $("title").html(app_name[WL]);

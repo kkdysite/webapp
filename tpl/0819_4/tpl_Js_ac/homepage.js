@@ -23,7 +23,7 @@ jQuery('#shap_qrcode').qrcode({
 
 $('.shap_qrcode').html($('#shap_qrcode').html());
 
-var Portable_html = "因为我们没有办法适配所有设备，所以我们提供了免安装版本，在无法正常安装客户端的设备上你可以尝试直接使用浏览器打开使用<br><span class='copy_url_txt' id='Tvurl'>http://t.kkdy.website/</span><a href='#' data-clipboard-action='copy' class='copyTvurl' data-clipboard-target='#Tvurl'>复制地址</a>&nbsp;支持大部分智能设备。<br>&nbsp;&nbsp;注意1：免安装版本只有基本的观影功能。需要配合手机客户端使用<br>&nbsp;&nbsp;注意2：机顶盒使用地址要填写完整包括http以及后面的冒号斜杠。<br>旧版机顶盒如果无法直接使用，请使用第三方电视浏览器。比如：电视家浏览、艾克思浏览器，支持鼠标的机顶盒请也可以尝试使用安卓版或者chrome等专业浏览器";
+var portable_html = "因为我们没有办法适配所有设备，所以我们提供了免安装版本，在无法正常安装客户端的设备上你可以尝试直接使用浏览器打开使用<br><span class='copy_url_txt' id='Tvurl'>http://t.kkdy.website/</span><a href='#' data-clipboard-action='copy' class='copyTvurl' data-clipboard-target='#Tvurl'>复制地址</a>&nbsp;支持大部分智能设备。<br>&nbsp;&nbsp;注意1：免安装版本只有基本的观影功能。需要配合手机客户端使用<br>&nbsp;&nbsp;注意2：机顶盒使用地址要填写完整包括http以及后面的冒号斜杠。<br>旧版机顶盒如果无法直接使用，请使用第三方电视浏览器。比如：电视家浏览、艾克思浏览器，支持鼠标的机顶盒请也可以尝试使用安卓版或者chrome等专业浏览器";
 var p_set = {
         'android': {
             'name': '安卓手机','button_name': "下载安卓版",'dl_link_name': '下载 看看电影.apk',
@@ -46,11 +46,11 @@ var p_set = {
         },
         'unix': {
             'name': 'unix设备','button_name': "使用免安装版",'dl_link_name': '','dl_link_url': '',
-            'html': Portable_html
+            'html': portable_html
         },
         'linux': {
             'name': 'linux电脑','button_name': "使用免安装版",'dl_link_name': '','dl_link_url': '',
-            'html': Portable_html
+            'html': portable_html
         },
 
         'other': {
@@ -58,7 +58,7 @@ var p_set = {
             'button_name': "使用免安装版",
             'dl_link_name': '',
             'dl_link_url': '',
-            'html': Portable_html
+            'html': portable_html
         },
 
         'tv': {
@@ -67,16 +67,16 @@ var p_set = {
            
             'dl_link_name': '',
             'dl_link_url': '',
-            'html': "机顶盒首选使用安卓版本，如果不可以使用请选择免安装版本<br>" + Portable_html
+            'html': "机顶盒首选使用安卓版本，如果不可以使用请选择免安装版本<br>" + portable_html
         },
 
-        'Portable': {
+        'portable': {
             'name': '免安装版本',
             'button_name': "使用免安装版",
            
             'dl_link_name': '',
             'dl_link_url': '',
-            'html': "" + Portable_html
+            'html': "" + portable_html
         },
     };
     $('.alldownloadlink').html($("#all_dl_links_tpl").html()); //复制下载地址链接
