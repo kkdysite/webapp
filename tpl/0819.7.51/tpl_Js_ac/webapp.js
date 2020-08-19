@@ -11,11 +11,7 @@ if(app_var){
 //存放删除和需要添加的播放界面代码 因为异步 需要全局变量
 var vodShowHtml_remove_add;
 
-jQuery('#shap_qrcode').qrcode({
-    render: "canvas", //也可以替换为table
-    foreground: "#000",
-    text: "http://app.kkdy.website/?reg=1&uid=9900" + $(".local_user_id").val()
-  });
+
 
 //定义路由数组 用于控制前进后退
 var arr_History = new Array();
@@ -70,6 +66,18 @@ $(document).on("pageInit", function (e, pageId, $page) {
         localStorage_update_fav();//先显示 后更新
         u_fav_list();
     }
+
+    //初始化 分享 主要二维码
+    if(pageId == "page_u_sharp") {
+        var temp_URl='';
+        jQuery('#shap_qrcode').qrcode({
+            render: "canvas", //也可以替换为table
+            foreground: "#000",
+            text: "http://app.kkdy.website/?reg=1&uid=9900" + $(".local_user_id").val()
+          });
+    }
+    
+    
 
 });
 // 后退按钮   --
@@ -1480,8 +1488,15 @@ function set_userinfo() {
     $(".user_pid_2").html(u_info.user_pid_2);
     $(".user_pid_3").html(u_info.user_pid_3);
     $(".user_loginpin").html(u_info.user_loginpin);
-
+    //邀请码相关
     $(".user_id_span").html(u_info.user_id);
+    $(".SharpUrl_dl").html(SharpUrl_dl);
+    $(".SharpUrl_reg").html(SharpUrl_reg);
+    $(".Invitation_code_prefix").html(Invitation_code_prefix);
+
+    $(".SharpUrl_dl_uid").html(SharpUrl_dl_uid.replace('UID',Invitation_code_prefix+""+u_info.user_id));
+    $(".SharpUrl_reg_uid").html(SharpUrl_reg_uid.replace('UID',Invitation_code_prefix+""+u_info.user_id));
+
     //用户数据
     $(".local_user_id").val(u_info.user_id);
     $(".local_userkey").val(u_info.local_userkey);
