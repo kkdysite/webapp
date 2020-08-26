@@ -1,0 +1,15 @@
+.page .cardmain {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    max-width: 20rem;
+}
+.dl {margin: 0.5rem;}
+#all_dl_links_tpl {
+    display: none;
+}
+.copy_url_txt{display:block;padding:.2rem 1rem;border:1px solid red;background:#fff;color:red;}
+#shap_qrcode{display: none;}
+.shap_qrcode table, .shap_qrcode canvas{width: 100%; margin: 0 auto;}
+.nosafari,.issafari{display:none;}
+.alldownloadlink a{ margin: 0.2rem;white-space:nowrap; display: block; float: left;}
+.alldownloadlink  .card{clear: both;}
